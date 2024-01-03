@@ -1,0 +1,44 @@
+body{
+    background-image: radial-gradient(circle,red,yellow,green);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+    h1{
+    text-align: center;
+    position: relative;
+    padding-top: 100px;
+    top:150px;
+
+}
+@keyframes Zoo {
+   from{
+    font-size: 100px;
+   } 
+   10%{
+  transform:rotatex(90deg) ;
+  color:yellowgreen;
+   }
+   50%{
+    color: aqua;
+    transform: rotate3d(90deg);
+    transition-duration: 2s;
+   }
+   100%{
+    color:chartreuse;
+    transform: rotate3d(90deg);
+    transition-duration: 2s;
+   }
+}
+h1,h2{
+    animation-name: Zoo;
+    animation-duration: 10s;
+    animation-delay: none;
+    animation-iteration-count: 20;
+}
+h3{
+    animation-name: Zoo;
+    animation-duration: 10s;
+    animation-delay: none;
+    animation-iteration-count: 20;  
+    text-align: right;
+}
